@@ -57,7 +57,6 @@ img {
     width: auto;
     display: block;
     margin: 0.6em auto 1.25rem;
-    filter: drop-shadow(0 5px 5px #8d8d8d);
 }
 
 iframe {
@@ -211,12 +210,10 @@ header img {
 
 section.intro {
     text-align: center;
-    height: calc(100vw / 1.499267935578331);
 }
 
 section:last-child {
     background-color: black;
-    padding-bottom: 500px;
 }
 
 .fondNoirHeader {
@@ -227,3 +224,38 @@ section:last-child {
     background-color: black;
 }
 
+
+
+
+
+main {
+    padding: 10px;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.page-index main {
+    max-width: unset;
+    padding: 0 0;
+}
+
+
+
+.page-index section.sectionPaddingAccueil{
+    padding: 10px 10px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carteRealisations section {
+    border: solid 2px gray;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.carteRealisations section h2 {
+    margin-top: 0;
+}
