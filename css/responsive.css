@@ -1,0 +1,88 @@
+@media only screen and (min-width: 910px) {
+    header {
+        height: 120px;
+    }
+
+    header div.menuBouton input {
+        display: none;
+    }
+
+    header div.menuBouton span {
+        display: none;
+    }
+
+    header div.menuBouton .menu {
+        position: unset;
+        transform: none;
+        background: unset;
+
+    }
+    header div.menuBouton .menu li {
+        display: inline-block;
+        margin: 0.5em;
+        padding: 0.5vw;
+    }
+
+    header div.menuBouton .menu li a {
+        font-size: clamp(1px, 2vw, 2.25rem);
+    }
+
+    header img#logo {
+        display: none;
+    }
+
+    header .menu #logoBurgerMenu {
+        display: inline-block;
+        width: 300px;
+        max-width: 115px;
+    }
+
+    header .menu #logoBurgerMenu,
+    header div.menuBouton .menu li {
+        vertical-align: middle;
+    }
+
+    .navigation {
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    body.page-index  {
+        background: url("../img/A_laptop_and_a_notebook_on_the_wooden_table_(Pixabay).jpg") no-repeat center;
+        background-size: 100%;
+        background-position: top;
+        background-attachment: fixed;
+    }
+
+    section.intro {
+        height: calc(100vw / 1.499267935578331 - 25vw);
+        padding-top: calc((100vw / 1.499267935578331 - 25vw)/4);
+    }
+
+    .page-index h1,
+    .page-index section.intro h2 {
+        font-weight: bold;
+    }
+
+    .page-index h1{
+        font-size: 3rem;
+    }
+
+    .page-index .into h1 {
+        font-size: 2rem;
+    }
+
+    .page-index main {
+        background-color: unset;
+    }
+    .page-index section {
+        background-color: black;
+    }
+    .page-index section.intro {
+        background-color: unset;
+    }
+
+    .fondNoirHeader {
+        display: none;
+    }
+}

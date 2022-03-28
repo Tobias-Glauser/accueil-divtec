@@ -1,0 +1,229 @@
+/*********************************
+ ************ GENERAL ************
+ ********************************/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem; /* 100% => 16px par défaut em = 1rem du parent*/
+    line-height: 1.4;
+    background: black;
+    color: white;
+}
+
+main {
+    background-color: black;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: .5em;
+}
+
+p {
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 0.4em;
+    text-align: justify;
+}
+
+a {
+    font-style: italic;
+    color: #000000;
+    text-decoration: none;
+}
+
+img {
+    max-width: 70%;
+    max-height: 20rem;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: 0.6em auto 1.25rem;
+    filter: drop-shadow(0 5px 5px #8d8d8d);
+}
+
+iframe {
+    width: 100%;
+    height: 700px;
+    background-color: white;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/********************************
+************ HEADER *************
+********************************/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000000;
+    height: 97px;
+    align-items: center;
+}
+
+.menuBouton {
+    display: block;
+    z-index: 2;
+}
+
+.menu li a {
+    font-style: normal;
+    font-family: 'Raleway', cursive;
+    font-weight: 400;
+    color: #a98243;
+    text-decoration: none;
+}
+
+.menuBouton input {
+    display: block;
+    width: 77px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 3;
+}
+
+.menuBouton span {
+    display: block;
+    width: 45px;
+    height: 6px;
+    margin-bottom: 5px;
+    position: relative;
+    top: -35px;
+    left: 3px;
+
+
+    background: white;
+    border-radius: 3px;
+
+    z-index: 2;
+
+    transform-origin: 0 4px;
+
+    transition: transform 0.5s, background 0.5s;
+}
+
+.menuBouton span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menuBouton span:nth-child(3) {
+    transform-origin: 0 100%;
+}
+
+.menuBouton input:checked ~ span:nth-child(2) {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -4px);
+}
+
+.menuBouton input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menuBouton input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(0, 6px);
+}
+.menu {
+    position: absolute;
+    width: 100%;
+    top: 97px;
+    left: 0;
+    padding: 2px 0 0 0;
+
+    display: block;
+
+    text-align: center;
+
+    z-index: 1;
+
+    margin: 0;
+
+    background: #49391f;
+    list-style: none;
+
+    transform-origin: 0 0;
+    transform: translate(0, -200%);
+
+    transition: transform 0.5s;
+    justify-content: space-around;
+}
+
+
+.menu li {
+    border-radius: 18px;
+    margin: 11px 22px;
+}
+
+.menu #logoBurgerMenu {
+    display: none;
+}
+
+
+
+.menu li a {
+    font-size: clamp(10px, 8vw, 2.25rem);
+}
+
+.menuBouton input:checked ~ ul {
+    transform: none;
+}
+
+.navigation {
+    margin-top: 28px;
+    margin-left: 12px;
+}
+
+header img {
+    max-width: 100px;
+    filter: none;
+    width: 100px;
+    margin: 0 10px;
+}
+
+.lienImgHeader {
+    z-index: 2;
+}
+
+section.intro {
+    text-align: center;
+    height: calc(100vw / 1.499267935578331);
+}
+
+section:last-child {
+    background-color: black;
+    padding-bottom: 500px;
+}
+
+.fondNoirHeader {
+    width: 100vw;
+    height: 97px;
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+}
+
